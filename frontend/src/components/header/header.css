@@ -1,0 +1,71 @@
+/* Header container */
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background: rgb(246, 196, 29);
+  background: linear-gradient(
+    128deg,
+    rgba(246, 196, 29, 1) 9%,
+    rgba(255, 255, 255, 1) 82%,
+    rgba(252, 234, 176, 1) 92%
+  );
+  justify-content: space-between;
+  padding: 0 20px; /* Add padding to the sides */
+}
+
+/* First container */
+.first-container {
+ 
+  display: flex;
+  align-items: center;
+}
+
+/* Logo container */
+.logo-container img {
+  /* border: 1px solid red; */
+  /* background-color: red; */
+  height: 60px;
+  width: auto; /* Allow the image to adjust its width */
+}
+
+/* Logo name */
+.logo-name {
+ 
+  font-size: 24px; /* Adjust font size for smaller screens */
+}
+
+/* Second container */
+.second-container {
+ 
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation */
+.nav {
+   
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 35px;
+  width: 90px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px; /* Adjust font size for smaller screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .logo-name {
+    font-size: 20px;
+  }
+
+  .nav {
+    height: 30px;
+    width: 70px;
+    font-size: 14px;
+  }
+}

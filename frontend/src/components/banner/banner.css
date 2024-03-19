@@ -1,0 +1,25 @@
+/* Banner container */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #f9f6ee;
+  }
+  
+  /* Banner image */
+  .banner-container img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Adjust width to fill container */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .banner-container img {
+      height: auto; /* Ensure image maintains aspect ratio */
+      max-width: 100%; /* Adjust width to fill container */
+    }
+  }
+  

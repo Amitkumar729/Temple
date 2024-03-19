@@ -1,0 +1,61 @@
+/* Footer container */
+.footer-container {
+  height: 150px;
+  background: #36454f;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  border-radius: 5px;
+}
+
+/* Address and office sections */
+.address,
+.office {
+  width: 100%; /* Take full width on smaller screens */
+  max-width: 250px; /* Limit maximum width */
+  color: white;
+  text-align: center; /* Center align text */
+  margin-bottom: 10px; /* Add spacing between sections */
+}
+
+/* Headings */
+.head {
+  color: white;
+  text-align: center; /* Center align text */
+}
+
+/* Data content */
+.data-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: beige;
+  margin-top: 5px;
+}
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Icon */
+.icon {
+  color: white;
+}
+
+/* Contact */
+.contact {
+  margin-left: 10px;
+  color: bisque;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .footer-container {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Auto adjust height based on content */
+  }
+}

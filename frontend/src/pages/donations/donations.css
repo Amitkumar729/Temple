@@ -1,0 +1,79 @@
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to fill the viewport */
+}
+
+/* Main content */
+.main-content {
+  flex: 1; /* Allow main content to grow to fill remaining space */
+}
+
+/* Footer */
+.footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Donation container */
+.donation-container {
+  /* Remove height property */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Header */
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/* List */
+.list {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(20.33% - 20px);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+/* Name */
+.name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Location */
+.location {
+  font-size: 18px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .header {
+    font-size: 30px;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+}

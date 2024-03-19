@@ -1,0 +1,85 @@
+/* Founder container */
+.founder-container {
+  /* border: 1px solid red; */
+  height: auto; /* Auto adjust height based on content */
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #f9f6ee;
+}
+
+/* Title */
+.title {
+  text-align: center; /* Center align text */
+  font-size: 30px;
+}
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Founder wrapper */
+.founder-wrapper,
+.sanatan-image {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 20px; /* Add margin for spacing */
+}
+
+.founder-wrapper img {
+  border: 3px solid pink;
+}
+
+.sanatan-image img {
+  /* border: 1px solid red; */
+  max-height: 270px;
+}
+
+/* Founder image */
+.founder-wrapper img,
+.sanatan-image img {
+  width: 100%; /* Make images responsive */
+  max-width: 400px; /* Limit maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.last-container {
+  /* border: 1px solid red; */
+}
+
+/* Text */
+.text {
+  /* border: 1px solid red; */
+  text-align: center; /* Center align text */
+  font-size: 18px;
+  /* max-width: 350px; */
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to fill the viewport */
+}
+
+/* Main content */
+.main-content {
+  flex: 1; /* Allow main content to grow to fill remaining space */
+}
+
+/* Footer */
+.footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .founder-wrapper,
+  .sanatan-image {
+    margin: 10px; /* Reduce margin for spacing */
+  }
+}

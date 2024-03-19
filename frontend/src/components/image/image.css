@@ -1,0 +1,55 @@
+/* Image container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #f9f6ee;
+}
+
+/* Heading */
+.heading {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/* Image wrapper */
+.image-wrapper {
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  width: 100%; /* Adjust width for smaller screens */
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  justify-content: center;
+}
+
+/* Image card */
+.image-card {
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Adjust width for smaller screens */
+  max-width: 400px;
+}
+
+/* Image */
+.image-card img {
+  width: 100%; /* Make images responsive within their container */
+  height: auto; /* Ensure images maintain their aspect ratio */
+  max-width: 100%; /* Limit maximum width of the image */
+  max-height: 400px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .heading {
+    font-size: 30px;
+  }
+
+  .image-card {
+    width: calc(50% - 20px); /* Adjust width for smaller screens */
+  }
+}
