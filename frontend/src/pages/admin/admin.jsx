@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./admin.css";
 
 export const AdminDashboard = () => {
-
+ 
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
 
