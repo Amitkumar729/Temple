@@ -15,10 +15,10 @@ export const Donations = () => {
 
   const fetchDonations = async () => {
     try {
-      const response = await fetch("/api/donations");
+      const response = await fetch("http://localhost:4000/api/getDonationData");
       if (response.ok) {
         const data = await response.json();
-        setDonations(data);
+        setDonations(data.data);
       } else {
         console.error("Failed to fetch donations");
       }
@@ -27,6 +27,9 @@ export const Donations = () => {
     }
   };
   
+
+  // console.log("donations -> ", donations);
+
   return (
     <div className="app-container">
       <Header showDonation={false} showHome={true} showAbout={true} />

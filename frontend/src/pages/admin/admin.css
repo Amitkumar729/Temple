@@ -1,0 +1,46 @@
+.admin-dashboard-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.admin-form {
+  /* border: 1px solid red; */
+
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* height: 1000px; */
+}
+
+.wrapper {
+  /* border: 1px solid red; */
+  margin: 10px;
+}
+
+.input-label {
+  
+  font-size: 25px;
+}
+
+.input-field {
+  margin-left: 10px;
+}
+
+.submit-button {
+  /* border: 1px solid red; */
+  margin-top: 1vh;
+  width: 97%;
+  height: 35px;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 const express = require("express");
-const donationData = require("../controller");
+const { donationData, getDonationData } = require("../controller");
  
 
 
@@ -7,6 +7,7 @@ const donationData = require("../controller");
 const route = express.Router();
 
 route.post("/donations", donationData );
+route.get("/getDonationData", getDonationData);
  
 
 module.exports = route;
