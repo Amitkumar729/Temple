@@ -11,7 +11,7 @@ export const AdminDashboard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/api/donations", {
+      const response = await fetch("https://temple-backend.onrender.com/api/donations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

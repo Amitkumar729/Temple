@@ -20,6 +20,7 @@
     .banner-container img {
       height: auto; /* Ensure image maintains aspect ratio */
       max-width: 100%; /* Adjust width to fill container */
+      box-shadow: 10px 10px 5px lightblue;
     }
   }
   

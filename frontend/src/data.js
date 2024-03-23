@@ -1,23 +1,23 @@
-export const Images = [
-  "/images/image7.jpg",
-  "/images/image8.jpg",
-  "/images/image1.jpg",
-  "/images/image3.jpg",
-  "/images/image5.jpg",
-  // "/images/image6.jpg",
-  "/images/image2.jpg",
-  // "/images/image4.jpg",
-];
-
-
-export const donationData = [
-  {
-    name: "Amit kumar",
-    location: "Ghazaibad"
-  },
-  {
-    name: "Ritesh kumar",
-    location: "Noida"
-  },
+// export const Images = [
   
-]
+//   "/images/image1.jpg",
+//   "/images/image33.jpg",
+  
+//   "/images/image2.jpg",
+// ];
+
+
+export const Images = [
+  {
+    img: "/images/image1.jpg",
+    name: "राहु धाम मंदिर"
+  },
+  {
+    img: "/images/image33.jpg",
+    name: "प्रसूति चिकित्सालय"
+  },
+  {
+    img: "/images/image2.jpg",
+    name: "वृद्धा आश्रम"
+  },
+];

@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 
-export const Header = ({ showDonation, showHome, showAbout }) => {
+export const Header = ({ showDonation, showHome, showAbout, showRahu }) => {
   return (
     <div className="header-container">
       <div className="first-container">
@@ -12,49 +12,42 @@ export const Header = ({ showDonation, showHome, showAbout }) => {
         <div className="logo-name">राहु धाम ट्रस्ट्</div>
       </div>
       <div className="second-container">
-      {showDonation && (
-        
-        
+      <div className="nav">
+      <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
+        Home
+      </Link>
+    </div>
+       
         <div className="nav">
           <Link
-            to={"/donations"}
-            style={{ textDecoration: "none", color: "black" }}
+            to={"/about-rahu"}
+            style={{ textDecoration: "none", color: "white" }}
           >
-            Donations
+            Rahu
           </Link>
         </div>
+        <div className="nav">
+        <Link
+          to={"/donations"}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          Donations
+        </Link>
+      </div>
+
+      
 
        
-        
-          
-          )}
-          {
-            showHome && (
-              <div className="nav">
-              <Link
-                to={"/"}
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                Home
-              </Link>
-            </div>
-            )
-          }
-
-          {
-            showAbout && (
-              <div className="nav">
-              <Link
-                to={"/about-me"}
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                About
-              </Link>
-            </div>
-            )
-          }
-          
+          <div className="nav">
+            <Link
+              to={"/about-me"}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              About me
+            </Link>
           </div>
+     
+      </div>
     </div>
   );
 };

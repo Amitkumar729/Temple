@@ -5,28 +5,16 @@ import { Images } from "../../data";
 export const Image = () => {
   return (
     <div className="image-container">
-      <div className="heading">Images of Events</div>
+      <div className="heading">Images</div>
       <div className="image-wrapper">
-         
-
-        {Images.map((img, idx) => (
-          <div className="image-card" key={idx} >
-          <img src={img} />
-        </div>
+        {Images.map(({ img, name }, idx) => (
+          <div className="image-sub-wrapper">
+            <div className="image-card" key={idx}>
+              <img src={img} alt={name} />
+            </div>
+            <div className="image-name">{name}</div>
+          </div>
         ))}
-
-
-        {/*
-        <div className="image-card">
-          <img src="/images/image1.jpg" />
-        </div>
-        <div className="image-card">
-          <img src="/images/image3.jpg" />
-        </div>
-        <div className="image-card">
-          <img src="/images/image2.jpg" />
-        </div>
-      */}
       </div>
     </div>
   );

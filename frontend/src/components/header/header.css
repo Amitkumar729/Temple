@@ -3,12 +3,19 @@
   display: flex;
   align-items: center;
   height: 70px;
-  background: rgb(246, 196, 29);
+  /* background: rgb(246, 196, 29);
   background: linear-gradient(
     128deg,
     rgba(246, 196, 29, 1) 9%,
     rgba(255, 255, 255, 1) 82%,
     rgba(252, 234, 176, 1) 92%
+  ); */
+  background: rgb(29, 66, 246);
+  background: linear-gradient(
+    128deg,
+    rgba(29, 66, 246, 1) 0%,
+    rgba(115, 79, 248, 1) 100%,
+    rgba(255, 255, 255, 1) 100%
   );
   justify-content: space-between;
   padding: 0 20px; /* Add padding to the sides */
@@ -16,7 +23,6 @@
 
 /* First container */
 .first-container {
- 
   display: flex;
   align-items: center;
 }
@@ -31,21 +37,19 @@
 
 /* Logo name */
 .logo-name {
- 
   font-size: 24px; /* Adjust font size for smaller screens */
+  color: white;
 }
 
 /* Second container */
 .second-container {
- 
   display: flex;
   align-items: center;
 }
 
 /* Navigation */
 .nav {
-   
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 15px;
   height: 35px;
   width: 90px;

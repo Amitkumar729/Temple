@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./donations.css";
 import { Header } from "../../components/header/header";
 import { Footer } from "../../components/footer/footer";
+import { DonationLoader } from "../../components/loader/loader";
 // import { donationData } from "../../data";
  
 
@@ -15,7 +16,7 @@ export const Donations = () => {
 
   const fetchDonations = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/getDonationData");
+      const response = await fetch("https://temple-backend.onrender.com/api/getDonationData");
       if (response.ok) {
         const data = await response.json();
         setDonations(data.data);
@@ -28,23 +29,21 @@ export const Donations = () => {
   };
   
 
-  // console.log("donations -> ", donations);
-
   return (
     <div className="app-container">
       <Header showDonation={false} showHome={true} showAbout={true} />
       <div className="main-content">
         <div className="donation-container">
-          <div className="header">Donations</div>
+          <div className="donation-header">Donations</div>
           <div className="list">
-         
-          {donations.map((donation, index) => (
+         {
+          donations.length > 0 ? donations.map((donation, index) => (
             <div className="card" key={index}>
               <div className="name">{donation.name}</div>
               <div className="location">{donation.location}</div>
             </div>
-          ))}
-       
+          )) :  <DonationLoader/>
+         }
           </div>
         </div>
       </div>

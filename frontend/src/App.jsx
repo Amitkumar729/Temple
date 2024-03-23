@@ -5,6 +5,8 @@ import { Donations } from "./pages/donations/donations";
 import { Founder } from "./pages/founder/founder";
 import { Login } from "./pages/login/login";
 import { AdminDashboard } from "./pages/admin/admin";
+import { About } from "./components/about/about";
+ 
  
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/about-me" element={<Founder />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/about-rahu" element={<About />} />
+       
       </Routes>
     </Router> 
   );

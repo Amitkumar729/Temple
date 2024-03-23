@@ -25,12 +25,14 @@
 }
 
 /* Header */
-.header {
-  height: 50px;
+.donation-header {
+  /* border: 1px solid red; */
+  /* height: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 35px;
+  color: blue;
 }
 
 /* List */
