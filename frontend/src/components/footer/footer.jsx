@@ -33,19 +33,19 @@ export const Footer = () => {
         </div>
         <div className="wrapper">
           <div className="icon">
-            <FaPhoneAlt />
+            <FaPhoneAlt size={"15px"} />
           </div>
           <div className="contact">+91-9953909713</div>
         </div>
         <div className="wrapper">
           <div className="icon">
-            <FaPhoneAlt />
+            <FaPhoneAlt size={"15px"} />
           </div>
           <div className="contact">+91 120-4162527</div>
         </div>
         <div className="wrapper">
           <div className="icon">
-            <FaPhoneAlt />
+            <FaPhoneAlt size={"15px"} />
           </div>
           <div className="contact">+91-9953745401</div>
         </div>
