@@ -31,10 +31,12 @@ export const Donations = () => {
 
   return (
     <div className="app-container">
-      <Header showDonation={false} showHome={true} showAbout={true} />
+      <Header />
+      
       <div className="main-content">
         <div className="donation-container">
           <div className="donation-header">Donations</div>
+          <img src="/images/scanner.jpg" />
           <div className="list">
          {
           donations.length > 0 ? donations.map((donation, index) => (
@@ -42,7 +44,7 @@ export const Donations = () => {
               <div className="name">{donation.name}</div>
               <div className="location">{donation.location}</div>
             </div>
-          )) :  <DonationLoader/>
+          )) :  <DonationLoader />
          }
           </div>
         </div>

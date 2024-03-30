@@ -27,7 +27,7 @@ const getDonationData = async (req, res) => {
     });
   } catch (error) {
     return res.status(500).json({
-      message: "Server Error, Failed to save the data...",
+      message: "Server Error, Failed to get the data...",
     });
   }
 }
