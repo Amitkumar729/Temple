@@ -58,6 +58,14 @@ export const Header = () => {
               About me
             </Link>
           </div>
+          <div className="nav">
+            <Link
+              to={"/contact-us"}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
     </>
