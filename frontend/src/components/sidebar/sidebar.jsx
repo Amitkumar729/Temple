@@ -17,7 +17,7 @@ export const Sidebar = () => {
             to={"/about-rahu"}
             style={{ textDecoration: "none", color: "white" }}
           >
-            Rahu
+            About Rahu
           </Link>
         </div>
         <div className="side-nav">
@@ -35,6 +35,14 @@ export const Sidebar = () => {
             style={{ textDecoration: "none", color: "white" }}
           >
             About me
+          </Link>
+        </div>
+        <div className="side-nav">
+          <Link
+            to={"/contact-us"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Contact Us
           </Link>
         </div>
       </div>

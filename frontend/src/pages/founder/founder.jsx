@@ -10,7 +10,7 @@ export const Founder = () => {
 
       <div className="main-content">
         <div className="founder-container">
-          <div className="title">About Us</div>
+          <div className="title"><h4>About Us</h4></div>
           <div className="founder-sub-container">
             <div className="founder-wrapper">
               <img src="/images/founder.png" alt="Founder" />

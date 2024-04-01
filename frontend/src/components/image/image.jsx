@@ -5,7 +5,7 @@ import { Images } from "../../data";
 export const Image = () => {
   return (
     <div className="image-container">
-      <div className="heading">Images</div>
+     
       <div className="image-wrapper">
         {Images.map(({ img, name }, idx) => (
           <div className="image-sub-wrapper">

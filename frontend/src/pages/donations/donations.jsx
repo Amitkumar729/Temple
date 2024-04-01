@@ -35,7 +35,7 @@ export const Donations = () => {
       
       <div className="main-content">
         <div className="donation-container">
-          <div className="donation-header">Donations</div>
+          <div className="donation-header"><h4>Donations</h4></div>
           <img src="/images/scanner.jpg" />
           <div className="list">
          {

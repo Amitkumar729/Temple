@@ -6,6 +6,7 @@ import { Founder } from "./pages/founder/founder";
 import { Login } from "./pages/login/login";
 import { AdminDashboard } from "./pages/admin/admin";
 import { About } from "./components/about/about";
+import { ContactUs } from "./pages/contactUs/contactUs";
  
  
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/about-rahu" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
        
       </Routes>
     </Router> 

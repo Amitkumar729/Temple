@@ -8,7 +8,7 @@ export const About = () => {
     <>
       <Header showAbout={true} showDonation={true} showHome={true} />
       <div className="about-container">
-        <div className="heading">राहु के बारे में जानकारी </div>
+        <div className="heading"><h4>राहु के बारे में जानकारी </h4></div>
         <div className="content">
           राहु और केतु जो स्वरभानु था, के पिता का नाम विप्रचित्त है और माता का
           नाम सिंहिका है। राहु की दो पत्नियां है जिनका नाम नागवल्ली और नागकणि है

@@ -23,6 +23,9 @@
 .head {
   color: white;
   text-align: center; /* Center align text */
+  font-weight: 500;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Data content */
@@ -32,6 +35,7 @@
   justify-content: center;
   color: beige;
   margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Wrapper */
