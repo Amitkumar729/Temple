@@ -30,8 +30,7 @@ export const ContactUs = () => {
               <h4>Rahu Dham-Registered Office</h4>
             </div>
             <div className="dataa">
-              Rahu Dham Temple.Old Age Home, 20 Bed "Maternity hospital Delhi
-              Lucknow Expressway Nanau, district Aligarh. Uttar Pradesh-202131.
+              H-755 A2 Palam Extn Sector 7, Dwarka New Delhi-110075.
             </div>
           </div>
           <div className="contact-data">

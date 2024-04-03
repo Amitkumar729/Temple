@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: 26px;
-  color: blue;
+  color: black;
   margin-top: 15px;
 }
 
@@ -29,6 +29,10 @@ contact-details {
   justify-content: center;
   font-size: 22px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.headd h4 {
+  color: blue;
 }
 
 .dataa {
@@ -52,4 +56,5 @@ contact-details {
 .contact-left h4 {
   margin-left: 15px;
   font-size: 21px;
+  font-weight: 500;
 }

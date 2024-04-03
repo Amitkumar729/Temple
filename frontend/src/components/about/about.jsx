@@ -1,12 +1,14 @@
 import React from "react";
 import "./about.css";
-import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
+import { Banner } from "../banner/banner";
+import { Header } from "../header/header";
 
 export const About = () => {
   return (
     <>
-      <Header showAbout={true} showDonation={true} showHome={true} />
+    <Header/>
+      <Banner/>
       <div className="about-container">
         <div className="heading"><h4>राहु के बारे में जानकारी </h4></div>
         <div className="content">
